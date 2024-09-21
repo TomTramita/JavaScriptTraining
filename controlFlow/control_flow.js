@@ -1,3 +1,4 @@
+//Based on role check access level
 let userRole = "manager";
 let accessLevel;
 
@@ -11,6 +12,7 @@ if (userRole === "admin") {
 
 console.log("Access Level:", accessLevel);
 
+//Check if logged and if yes whats the Role
 let isLoggedIn = false;
 let userMessage;
 
@@ -26,6 +28,7 @@ if (isLoggedIn) {
 
 console.log("User Message:", userMessage);
 
+//User Category definition
 let userType = "manager";
 let userCategory;
 
@@ -44,3 +47,9 @@ switch (userType) {
 }
 
 console.log("User Category:", userCategory);
+
+//Authetication
+let isAuthenticated = true;
+let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
+
+console.log("Authentication Status:", authenticationStatus);
