@@ -6,10 +6,17 @@
 <body>
    <h1>Weather Report</h1>
 
-  <form id="weatherForm">
+  <form id="cityWeatherForm">
     <label for="city">Enter City:</label>
-    <input type="text" id="city" name="city">
-    <button type="submit">Get Weather</button>
+    <input type="text" id="city" name="city" placeholder="City">
+    <button type="submit">Get Weather for City</button>
+  </form>
+</br>
+  <form id="coordsWeatherForm">
+    <label for="latitudeLongitude">Enter Coordinates:</label>
+    <input type="text" id="latitude" name="latitude" placeholder="10.000">
+    <input type="text" id="longitude" name="longitude" placeholder="10.000">
+    <button type="submit">Get Weather for Coordinates</button>
   </form>
 
   <div id="weatherInfo"></div>
