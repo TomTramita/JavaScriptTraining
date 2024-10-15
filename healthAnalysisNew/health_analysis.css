@@ -100,6 +100,7 @@
   /* Form Elements */
   form {
     margin-top: 20px;
+    min-width: 400px;
   }
   
   div {
@@ -195,6 +196,7 @@
     border: 1px solid #d9d9d9;
     border-radius: 4px;
     margin-top: 8px;
+    padding: 8px;
   }
   
   #result {
@@ -202,8 +204,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 400px;
-    width: 500px;
+    min-height: 100px;
+    width: 400px;
+    margin-bottom: 40px;
   }
   
   #result img {
@@ -212,6 +215,63 @@
     object-fit: cover;
     border-radius: 4px;
   }
+  
+  /* Contact Form Styles */
+  #contactForm {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: #ffffff; 
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  #contactForm input,
+  #contactForm textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px; 
+    border: 1px solid #d9d9d9; 
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease; 
+    box-sizing: border-box;
+  }
+  
+  #contactForm input:focus,
+  #contactForm textarea:focus {
+    border-color: #1890ff; /* Ant Design's primary blue color */
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2); /* Focus shadow effect */
+  }
+  
+  #contactForm button {
+    width: 100%; /* Makes the button full width */
+    padding: 12px 20px;
+    background-color: #1890ff; /* Using Ant Design's primary blue color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #contactForm button:hover {
+    background-color: #40a9ff; /* Slightly lighter shade for hover effect */
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media (max-width: 576px) {
+    #contactForm {
+      padding: 16px;
+    }
+  
+    #contactForm button {
+      padding: 10px 16px;
+    }
+  }
+  
   
   /* Card Component */
   .ant-card {
